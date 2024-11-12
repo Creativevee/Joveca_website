@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact us</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body>
+     <!-- Create a div with an id called "wrapper" -->
+     <div id="wrapper">
+
+        <!-- Start the page header -->
+        <header>
+          
+            <!-- h1 for our logo -->
+            <h1>
+                <img src="Images/LOGO.png" alt="Joveca Wines Logo" width="150" height="auto">
+            </h1>   
+      
+            <!-- Start the main nav -->
+<nav>
+    <h2>Menu</h2>  
+    <button class="hamburger" aria-label="Toggle navigation">
+        &#9776; <!-- This is the hamburger icon using a character entity -->
+    </button>
+    <!-- Start ul for menu -->
+    <ul class="displayed" id="navlinks">
+        <li><a class="home" href="index.html" class="thispage">Home</a></li>
+        <li><a href="wine_Catalog.html">Wine Catalog</a></li>
+        <li><a href="Club_Membership.html">Club Membership</a></li>
+        <li><a href="visitUs.html">Visit Us</a></li>
+        <li><a href="About.html">About Us</a></li>
+        <li><a href="contact_Us.html">Contact Us</a></li>
+        <li><a href="login.html" id="loginBtn">Login</a></li>
+    </ul>
+</nav>
+        </header>
+       <section id="contactSection" class="contact-section">
+        <h1> Contact Us</h2>
+        <p> We would Love to Hear from You!</p>
+        <p>Whether you have questions about our wines, need help with an order, or want 
+            to plan your visit, <br>our team at Joveca is here to assist.Reach out, and well 
+            respond as soon as possible.</p>
+        </section>
+        
+        <section id="Address" class="contact-section">
+            <h2>Address</h2>
+            <p>
+            Joveca Wine Shop<br>
+            123 Vineyard Lane<br>
+            Oldtown, DublinXX<br>
+            Dxxfxx<br>
+            Phone: (123) 456-7890<br>
+            Email: <a href="mailto:contact@jovecawines.com">contact@jovecawines.com</a>
+            </p>
+        </section>
+
+        <form class="contact-section">
+            
+               <h2>Contact Form</h2>
+                <p> Please fill out the form below with your details,<br> and we’ll get back to you shortly.</p>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="surname">Surname:</label>
+            <input type="text" id="surname" name="surname" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Your Message:</label>
+            <textarea id="message" name="message" rows="8" cols="35" required></textarea><br>
+            <button onclick="location.href=''">Submit</button>
+        </form>
+        
+     <!-- Footer -->
+     <footer>
+        <p>&copy; 2024 JOVECA Wines. All rights reserved.</p>
+    </footer>
+   
+        </div>
+   
+   <!-- added my javascript  -->
+   <script src="JS/script.js"></script>
+   
+</body>
+</html>

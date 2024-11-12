@@ -1,0 +1,76 @@
+            <!DOCTYPE html>
+            <html lang="en">
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>Visit Us</title>
+                <link rel="stylesheet" href="CSS/style.css">
+            </head>
+            <body>
+                
+                <!-- Create a div with an id called "wrapper" -->
+                <div id="wrapper">
+
+
+                    
+                    <!-- Start the page header -->
+                    <header>
+                    
+                        <!-- h1 for our logo -->
+                        <h1>
+                            <img src="Images/LOGO.png" alt="Joveca Wines Logo" width="150" height="auto">
+                        </h1>   
+                
+                        <!-- Start the main nav -->
+            <nav>
+                <h2>Menu</h2>  
+                <button class="hamburger" aria-label="Toggle navigation">
+                    &#9776; <!-- This is the hamburger icon using a character entity -->
+                </button>
+                <!-- Start ul for menu -->
+                <ul class="displayed" id="navlinks">
+                    <li><a class="home" href="index.html" class="thispage">Home</a></li>
+                    <li><a href="wine_Catalog.html">Wine Catalog</a></li>
+                    <li><a href="Club_Membership.html">Club Membership</a></li>
+                    <li><a href="visitUs.html">Visit Us</a></li>
+                    <li><a href="About.html">About Us</a></li>
+                    <li><a href="contact_Us.html">Contact Us</a></li>
+                    <li><a href="login.html" id="loginBtn">Login</a></li>
+                </ul>
+            </nav>
+                    </header>
+                
+                    <section id="map-section" class="visit-us">
+                    <h2>Visit Our Vineyard</h2>
+                    <!-- Embed the map here -->
+                    <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d5623.148756570063!2d-6.3945903003808855!3d53.40018280688374!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sie!4v1731376458469!5m2!1sen!2sie" 
+                    width="600" height="450" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                    
+                </section>
+
+                <section id="visitSection" class="visit-us">
+                    <h1>Visit Our Vineyard</h1>
+                    <p>Escape to the heart of our vineyard and experience the beauty of Joveca Wines up close. Wander through our sun-kissed vines, relax in the scenic landscape, and savor the taste of our handcrafted wines. Whether you’re a wine lover or just seeking a peaceful retreat, our vineyard offers the perfect escape.</p>
+                    <b>Book a visit today and let us share this unforgettable experience with you!</b><br>
+                    <button onclick="location.href=''">Book Now</button>
+                </section>
+                
+            
+            <!-- Footer -->
+            <footer>
+                <p>&copy; 2024 JOVECA Wines. All rights reserved.</p>
+            </footer>
+                    </div>
+            
+                <!-- added my javascript  -->
+                <script src="JS/script.js"></script>s
+            
+
+            </body>
+            </html>

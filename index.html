@@ -1,0 +1,84 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Joveca Wines</title> 
+        <link rel="stylesheet" href="CSS/style.css">
+    </head>
+    <body>
+    
+        <!-- Create a div with an id called "wrapper" -->
+        <div id="wrapper">
+        
+            <!-- Start the page header -->
+            <header>
+            
+                <!-- h1 for our logo -->
+                <h1>
+                    <img src="Images/LOGO.png" alt="Joveca Wines Logo" width="150" height="auto">
+                </h1>   
+        
+                <!-- Start the main nav -->
+    <nav>
+        <h2>Menu</h2>  
+        <button class="hamburger" aria-label="Toggle navigation">
+            &#9776; <!-- This is the hamburger icon using a character entity -->
+        </button>
+        <!-- Start ul for menu -->
+        <ul class="displayed" id="navlinks">
+            <li><a class="home" href="index.html" class="thispage">Home</a></li>
+            <li><a href="wine_Catalog.html">Wine Catalog</a></li>
+            <li><a href="Club_Membership.html">Club Membership</a></li>
+            <li><a href="visitUs.html">Visit Us</a></li>
+            <li><a href="About.html">About Us</a></li>
+            <li><a href="contact_Us.html">Contact Us</a></li>
+            <li><a href="login.html" id="loginBtn">Login</a></li>
+        </ul>
+    </nav>
+            </header>
+            
+            <!-- Hero Section with background image -->
+            <div id="hero">
+                <img rel="preload" src="Images/Black_grapes_background.jpg" alt="Grapes Background" width="900" height="auto">
+                <img rel="preload" src="Images/people_glass_wine1.jpg" alt="Wine Glass">
+                <img rel="preload" src="Images/wineredbottle.jpg" alt="Red wine bottle">
+        
+                <p>Welcome to Joveca Wines </p>
+            </div>
+            
+            <!-- Main content -->
+            <main>
+                
+                <!-- Shop Section -->
+                <section>
+                    <h2>Explore Our Wine Selection</h2>
+                    <p>Discover the best wines from around the world, curated for your taste.</p>
+                    <button onclick="location.href='wine_Catalog.html'">Shop Now</button>
+                </section>
+                
+                <!-- Club Membership Section -->
+                <section>
+                    <h2>Join Our Wine Club</h2>
+                    <p>Exclusive benefits, personalized selections, and early access to new releases.</p>
+                    <button onclick="location.href='Club_Membership.html'">Join Now</button>
+                </section>
+                
+            </main>
+            
+            <!-- Footer -->
+            <footer>
+                <p>&copy; 2024 JOVECA Wines. All rights reserved.</p>
+            </footer>
+        
+        </div>
+        <!-- end wrapper div -->
+
+        <!-- added my javascript  -->
+        <script src="JS/script.js"></script>
+    
+
+    </body>
+    <!-- end body -->
+    </html>
+    <!-- end html -->

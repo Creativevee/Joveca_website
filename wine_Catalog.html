@@ -1,0 +1,148 @@
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Wine Catalog</title>
+            <link rel="stylesheet" href="CSS/style.css">
+        </head>
+        <body>
+            <!-- Create a div with an id called "wrapper" -->
+            <div id="wrapper">
+                
+                <!-- Start the page header -->
+                <header>
+                
+                    <!-- h1 for our logo -->
+                    <h1>
+                        <img src="Images/LOGO.png" alt="Joveca Wines Logo" width="150" height="auto">
+                    </h1>   
+                
+                    <!-- Cart Icon -->
+                    <a href="cart.html" id="cart-icon" aria-label="Go to cart">
+                        <img src="Images/cart_icon.png" alt="Cart Icon" width="30" height="30">
+                    </a> 
+            
+                    <!-- Start the main nav -->
+        <nav>
+            <h2>Menu</h2>  
+            <button class="hamburger" aria-label="Toggle navigation">
+                &#9776; <!-- This is the hamburger icon using a character entity -->
+            </button>
+            <!-- Start ul for menu -->
+            <ul class="displayed" id="navlinks">
+                <li><a class="home" href="index.html" class="thispage">Home</a></li>
+                <li><a href="wine_Catalog.html">Wine Catalog</a></li>
+                <li><a href="Club_Membership.html">Club Membership</a></li>
+                <li><a href="visitUs.html">Visit Us</a></li>
+                <li><a href="About.html">About Us</a></li>
+                <li><a href="contact_Us.html">Contact Us</a></li>
+                <li><a href="login.html" id="loginBtn">Login</a></li>
+            </ul>
+        </nav>
+                </header>
+        
+                <section id="searchBar">
+                    <input type="text" id="searchInput" placeholder="Search for wines..." aria-label="Search for wines">
+                    <button id="filterBtn" >Filter by Price</button>
+                    
+                    <!-- Price filter selection (hidden by default) -->
+                    <label for="priceRange" id="priceFilterLabel" style="display: none;">Select Price Range:</label>
+                    <select id="priceRange">
+                        <option value="all">All Prices</option>
+                        <option value="low">Under €20</option>
+                        <option value="mid">Between €20 and €30</option>
+                        <option value="high">Above €30</option>
+                    </select>
+                </section>
+
+            <main>
+                <h2>Wine Catalog</h2>
+                <section id="catalog">
+                    <article class="wine-item" data-name="Wine Name 1" data-price="20">
+                        <img src="Images/wine1.png" alt="Wine 1">
+                        <h3>Wine Name 1</h3>
+                        <p>Price: €20</p>
+                        <button class="add-to-cart">+</button>
+                    </article>
+                    <article class="wine-item" data-name="Wine Name 2" data-price="25">
+                        <img src="Images/wine2.png" alt="Wine 2">
+                        <h3>Wine Name 2</h3>
+                        <p>Price: €25</p>
+                        <button class="add-to-cart">+</button>
+                    </article>
+                    <article class="wine-item" data-name="Wine Name 3" data-price="30">
+                        <img src="Images/wine1.png" alt="Wine 3">
+                        <h3>Wine Name 3</h3>
+                        <p>Price: €30</p>
+                        <button class="add-to-cart">+</button>
+                    </article>
+                    <article class="wine-item" data-name="Wine Name 4" data-price="15">
+                        <img src="Images/wine2.png" alt="Wine 4">
+                        <h3>Wine Name 4</h3>
+                        <p>Price: €15</p>
+                        <button class="add-to-cart">+</button>
+                    </article>
+                    <article class="wine-item" data-name="Wine Name 5" data-price="22">
+                        <img src="Images/wine1.png" alt="Wine 5">
+                        <h3>Wine Name 5</h3>
+                        <p>Price: €22</p>
+                        <button class="add-to-cart">+</button>
+                    </article>
+                    <article class="wine-item" data-name="Wine Name 6" data-price="18">
+                        <img src="Images/wine2.png" alt="Wine 6">
+                        <h3>Wine Name 6</h3>
+                        <p>Price: €18</p>
+                        <button class="add-to-cart">+</button>
+                    </article>
+                    <article class="wine-item" data-name="Wine Name 7" data-price="28">
+                        <img src="Images/wine1.png" alt="Wine 7">
+                        <h3>Wine Name 7</h3>
+                        <p>Price: €28</p>
+                        <button class="add-to-cart">+</button>
+                    </article>
+                    <article class="wine-item" data-name="Wine Name 8" data-price="35">
+                        <img src="Images/wine2.png" alt="Wine 8">
+                        <h3>Wine Name 8</h3>
+                        <p>Price: €35</p>
+                        <button class="add-to-cart">+</button>
+                    </article>
+                    <article class="wine-item" data-name="Wine Name 9" data-price="19">
+                        <img src="Images/wine1.png" alt="Wine 9">
+                        <h3>Wine Name 9</h3>
+                        <p>Price: €19</p>
+                        <button class="add-to-cart">+</button>
+                    </article>
+                    <article class="wine-item" data-name="Wine Name 10" data-price="23">
+                        <img src="Images/wine2.png" alt="Wine 10">
+                        <h3>Wine Name 10</h3>
+                        <p>Price: €23</p>
+                        <button class="add-to-cart">+</button>
+                    </article>
+                    <article class="wine-item" data-name="Wine Name 11" data-price="17">
+                        <img src="Images/wine1.png" alt="Wine 11">
+                        <h3>Wine Name 11</h3>
+                        <p>Price: €17</p>
+                        <button class="add-to-cart">+</button>
+                    </article>
+                    <article class="wine-item" data-name="Wine Name 12" data-price="29">
+                        <img src="Images/wine2.png" alt="Wine 12">
+                        <h3>Wine Name 12</h3>
+                        <p>Price: €29</p>
+                        <button class="add-to-cart">+</button>
+                    </article>
+                </section>
+            </main>
+
+            <!-- Footer -->
+            <footer>
+                <p>&copy; 2024 JOVECA Wines. All rights reserved.</p>
+            </footer>
+        
+                </div>
+
+            <!-- added my javascript  -->
+            <script src="JS/script.js"></script>
+
+        </body>
+        </html>

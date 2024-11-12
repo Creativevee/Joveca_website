@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account - Joveca Wines</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+
+    <!-- Single div container for all elements -->
+    <div class="register-container">
+        
+        <!-- Logo -->
+        <img src="Images/LOGO.png" alt="Joveca Wines Logo" width="100" height="auto" class="register-logo">
+
+        <!-- Register Form -->
+        <h2>Create Account</h2>
+        <form action="" method="POST" id="registerForm">
+            <!-- Full Name Field -->
+            <label for="fullName">Full Name</label>
+            <input 
+                type="text" 
+                id="fullName" 
+                name="fullName" 
+                required 
+                minlength="3" 
+                placeholder="Enter your full name">
+
+            <!-- Email Field -->
+            <label for="email">Email</label>
+            <input 
+                type="email" 
+                id="email" 
+                name="email" 
+                required 
+                placeholder="Enter your email">
+
+            <!-- Date of Birth Field -->
+            <label for="dob">Date of Birth</label>
+            <input 
+                type="date" 
+                id="dob" 
+                name="dob" 
+                required 
+                max="2004-12-31"
+                title="You must be 18 or older to create an account">
+            
+            <!-- Password Field -->
+            <label for="password">New Password</label>
+            <input 
+                type="password" 
+                id="password" 
+                name="password" 
+                required 
+                minlength="6" 
+                pattern="^(?=.*[A-Z])(?=.*\d)(?=.*[\W_]).*$" 
+                title="Password must be at least 6 characters long, contain one uppercase letter, one number, and one special character." 
+                placeholder="Enter a strong password" 
+                class="password-field">
+
+            <!-- Retype Password Field -->
+            <label for="retypePassword">Retype Password</label>
+            <input 
+                type="password" 
+                id="retypePassword" 
+                name="retypePassword" 
+                required 
+                minlength="6" 
+                placeholder="Retype your password"
+                class="retype-password-field">
+
+            <!-- Submit Button -->
+            <button type="submit" class="register-button">Create Account</button>
+
+            <!-- Optional Links -->
+            <p class="login-links">
+                Already have an account? <a href="login.html">Login here</a>
+            </p>
+        </form>
+
+    </div>
+
+</body>
+</html>
